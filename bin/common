@@ -39,7 +39,7 @@ _has_buildPropertiesFile() {
 
 _has_playConfig() {
   local ctxDir=$1
-  test -e $ctxDir/conf/"${APP_NAME}".conf
+  test -e $ctxDir/conf/$APP_NAME.conf
 }
 
 get_supported_sbt_version() {
