@@ -18,7 +18,7 @@ if detect_sbt $BUILD_DIR ; then
       echo "$PLAY_2_X"
     fi
   else
-    echo "Scala $APP_NAME"
+    echo "Scala"
   fi
   exit 0
 else
