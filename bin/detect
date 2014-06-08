@@ -8,9 +8,6 @@ BUILD_CONT=$(ls $BUILD_DIR)
 . $BIN_DIR/common
 
 ## SBT 0.10 allows either *.sbt in the root dir, or project/*.scala or .sbt/*.scala
-echo "$BUILD_CONT"
-exit 0
-
 if detect_sbt $BUILD_DIR ; then
   if is_play $BUILD_DIR ; then
     PLAY_2_X="Play 2.x"
