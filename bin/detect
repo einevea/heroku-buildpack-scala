@@ -3,7 +3,7 @@
 
 BIN_DIR=$(cd $(dirname $0); pwd)
 BUILD_DIR=$1
-BUILD_CONT=$(ls BUILD_DIR)
+BUILD_CONT=$(ls $BUILD_DIR)
 
 . $BIN_DIR/common
 
