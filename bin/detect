@@ -7,7 +7,7 @@ BUILD_DIR=$1
 . $BIN_DIR/common
 
 ## SBT 0.10 allows either *.sbt in the root dir, or project/*.scala or .sbt/*.scala
-echo $BUILD_DIR
+echo "$BUILD_DIR"
 if detect_sbt $BUILD_DIR ; then
   if is_play $BUILD_DIR ; then
     PLAY_2_X="Play 2.x"
@@ -22,5 +22,5 @@ if detect_sbt $BUILD_DIR ; then
   fi
   exit 0
 else
-  echo "no" && exit 1
+  echo "no $BUILD_DIR" && exit 1
 fi
